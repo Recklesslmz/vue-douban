@@ -47,17 +47,25 @@
           left: 3%;
         }
       ;
+        input::-webkit-input-placeholder{
+          padding: {
+            left:1rem;
+          };
+        }
         .m-passport {
           height: 2.5rem;
           width: 100%;
           background: #fff;
+          color: #999;
+          font:{
+            weight: 300;
+          };
           border: {
             top-left-radius: .3rem;
             top-right-radius: .3rem;
             top: 1px solid #dedede;
             left: 1px solid #dedede;
             right: 1px solid #dedede;
-            bottom: 0.5px solid #dedede;
 
           }
         }
@@ -65,6 +73,10 @@
           height: 2.5rem;
           width: 100%;
           background: #fff;
+          color: #999;
+          font:{
+            weight: 300;
+          };
           border: {
             bottom-left-radius: .3rem;
             bottom-right-radius: .3rem;
@@ -81,7 +93,7 @@
         height: 2.5rem;
         width: 94%;
         margin: {
-          top: 2rem;
+          top: 1rem;
         }
       ;
         background: $base-color;
