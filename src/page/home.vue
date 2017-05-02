@@ -29,13 +29,11 @@
         <div class="tab-list">
           <div class="tab-list-title">影院热映</div>
           <div class="movieList">
-            <div v-for='item in movieList'>
+            <div v-for='item in movieList' @click="toMovieDetail(item.id)">
               <img :src="item.images.small">
               <div class="title">{{item.title}}</div>
               <star :averages='item.rating.average' class='star'></star>
-
             </div>
-
           </div>
         </div>
       </div>
@@ -79,6 +77,10 @@
         }, response => {
 
         })
+      },
+      toMovieDetail(index){
+        this.$router.push({name: 'movieDetail', params: {id: index}})
+        console.log(index)
       }
     },
     components: {
@@ -164,19 +166,21 @@
 
             }
           }
-          .title{
+          .title {
             width: 4rem;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
             position: relative;
-            left:-.2rem;
+            left: -.2rem;
             margin: {
-              top:.3rem;
-            };
-            font:{
+              top: .3rem;
+            }
+          ;
+            font: {
               size: .6rem;
-            };
+            }
+          ;
           }
         }
         .movieList::-webkit-scrollbar {

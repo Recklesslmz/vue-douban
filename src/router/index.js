@@ -4,6 +4,7 @@ import Hello from '@/components/Hello'
 import Register from '../page/Register'
 import Login from '../page/Login'
 import home from '../page/home'
+import movieDetail from '../page/movieDetail'
 
 Vue.use(Router)
 
@@ -22,7 +23,11 @@ export default new Router({
     {
       path: '/home',
       component: home
-
+    },
+    {
+      path: '/movieDetail/:id',
+      name: 'movieDetail',
+      component: movieDetail
     }
   ]
 })
