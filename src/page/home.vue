@@ -32,7 +32,7 @@
             <div v-for='item in movieList' @click="toMovieDetail(item.id)">
               <img :src="item.images.small">
               <div class="title">{{item.title}}</div>
-              <star :averages='item.rating.average' class='star'></star>
+              <star :averages='item.rating.average' :isShow='isShow' class='star'></star>
             </div>
           </div>
         </div>
@@ -55,6 +55,7 @@
           name: '同城',
           type: 4
         }, {name: '音乐', type: 5}],
+        isShow: true,
         movieList: []
       }
     },

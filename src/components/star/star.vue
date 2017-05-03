@@ -6,14 +6,15 @@
     <div v-for='item in (5-starFirst)'>
       <img class="starChoose" src="http://7xviof.com1.z0.glb.clouddn.com/star_03.png">
     </div>
-    <div class="rating">{{averages}}</div>
+    <div v-if='isShow' class="rating">{{averages}}</div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
     props: {
-      averages: Number
+      averages: Number,
+      isShow: Boolean
     },
     data(){
       return {
@@ -39,13 +40,14 @@
     .starChoose {
       width: .5rem;
     }
-    .rating{
+    .rating {
       color: #9b9b9b;
       font: {
         size: .6rem;
-      };
+      }
+    ;
       position: relative;
-      top:.3rem;
+      top: .3rem;
     }
   }
 </style>
