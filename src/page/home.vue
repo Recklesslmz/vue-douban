@@ -26,13 +26,48 @@
           </div>
         </div>
 
-        <div class="tab-list">
+        <div class="tab-list" v-show='movieList.length > 0'>
           <div class="tab-list-title">影院热映</div>
+          <div class="more">更多></div>
           <div class="movieList">
             <div v-for='item in movieList' @click="toMovieDetail(item.id)">
               <img :src="item.images.small">
               <div class="title">{{item.title}}</div>
               <star :averages='item.rating.average' :isShow='isShow' class='star'></star>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-list" v-show='movieSoonList.length > 0'>
+          <div class="tab-list-title">院线即将上映</div>
+          <div class="more">更多></div>
+          <div class="movieList">
+            <div v-for='item in movieSoonList' @click="toMovieDetail(item.id)">
+              <img :src="item.images.small">
+              <div class="title">{{item.title}}</div>
+              <star :averages='item.rating.average' :isShow='isShow' class='star'></star>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-list" v-show='movieSoonList.length > 0'>
+          <div class="tab-list-title">精选榜单</div>
+          <div class="rankList">
+            <div class="topOne">
+              <div class="topOneTitle_f">豆瓣Top250</div>
+              <div class="topOneTitle_s">8分以上好电影</div>
+            </div>
+            <div class="topTwo">
+              <div class="topOneTitle_f">本周口碑榜</div>
+              <div class="topOneTitle_s">{{currentWeek}}</div>
+            </div>
+            <div class="topThree">
+              <div class="topOneTitle_f">新片榜</div>
+              <div class="topOneTitle_s">{{currentWeek}}</div>
+            </div>
+            <div class="topFour">
+              <div class="topOneTitle_f">票房榜</div>
+              <div class="topOneTitle_s">票房最高排名</div>
             </div>
           </div>
         </div>
@@ -56,7 +91,8 @@
           type: 4
         }, {name: '音乐', type: 5}],
         isShow: true,
-        movieList: []
+        movieList: [],
+        movieSoonList: []
       }
     },
     beforeCreate(){
@@ -64,24 +100,41 @@
     },
     mounted(){
       this.getHotMovie()
+      this.getSoonMovie()
     },
     methods: {
       chooseItem(index){
         this.chooseIndex = index
-        console.log(index)
       },
       getHotMovie(){
-        this.$http.get(commonUrl + '/v2/movie/in_theaters?count=10').then(response => {
+        this.$http.get(commonUrl + '/v2/movie/in_theaters?count=8').then(response => {
           Indicator.close()
           this.movieList = response.data.subjects
-          console.log(response)
+        }, response => {
+
+        })
+      },
+      getSoonMovie(){
+        this.$http.get(commonUrl + '/v2/movie/coming_soon?count=8').then(response => {
+          Indicator.close()
+          this.movieSoonList = response.data.subjects
         }, response => {
 
         })
       },
       toMovieDetail(index){
         this.$router.push({name: 'movieDetail', params: {id: index}})
-        console.log(index)
+      }
+    },
+    computed: {
+      currentWeek(){
+        let date = new Date()
+        let currentDay = date.getMonth() + 1 + '月' + date.getDate() + '日'
+        let myDate = new Date()
+        myDate.setDate(myDate.getDate() - 7);
+        let beforeDay = myDate.getMonth() + 1 + '月' + myDate.getDate() + '日'
+
+        return beforeDay + '~' + currentDay
       }
     },
     components: {
@@ -139,6 +192,17 @@
           top: .5rem;
         }
       ;
+        .more {
+          float: right;
+          position: relative;
+          top: -1rem;
+          right: 1rem;
+          color: $base-color;
+          font: {
+            weight: 300;
+          }
+        ;
+        }
         .tab-list-title {
           font: {
             size: 1.1rem;
@@ -187,6 +251,66 @@
         .movieList::-webkit-scrollbar {
           display: none
         }
+        .rankList::-webkit-scrollbar {
+          display: none
+        }
+        .rankList {
+          display: -webkit-box;
+          overflow-x: scroll;
+          margin: {
+            top: 1rem;
+          }
+        ;
+          .topOne {
+            margin: {
+              left: .2rem;
+            }
+          ;
+            width: 7.5rem;
+            height: 7.5rem;
+            color: #fff;
+            border: {
+              radius: .3rem
+            }
+          ;
+            text-align: center;
+            background: linear-gradient(#dca426, #f6ebcc);
+            .topOneTitle_f {
+              font: {
+                size: 1rem
+              }
+            ;
+              padding: {
+                top: 1rem;
+              }
+            ;
+            }
+            .topOneTitle_s {
+              font: {
+                size: .7rem;
+                weight: 300
+              }
+            ;
+              padding: {
+                top: 1rem;
+              }
+            ;
+            }
+          }
+          .topTwo {
+            @extend .topOne;
+            background: linear-gradient(#4dc064, #d1f0dc);
+          }
+          .topThree {
+            @extend .topOne;
+            background: linear-gradient(#9e65c3, #e6dbf1);
+          }
+          .topFour {
+            @extend .topOne;
+            background: linear-gradient(#df6d8a, #f7dbe2);
+          }
+        }
+
       }
     }
   }

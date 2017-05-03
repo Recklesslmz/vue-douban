@@ -19,10 +19,11 @@
       </div>
       <div class="point">
         <div class="point_title">豆瓣评分</div>
-        <div v-if='average != ""'>
+        <div>
           <div class="point_rating">{{movie.rating.average}}</div>
           <star class='point_star' :averages='average' :isShow='isShow'></star>
-          <div class="point_count">{{movie.collect_count}}</div>
+          <div class="point_count" v-if='movie.rating.average > 0'>{{movie.collect_count}}</div>
+          <div class="point_n" v-if='movie.rating.average === 0'>尚未上映</div>
         </div>
       </div>
     </div>
@@ -76,6 +77,10 @@
       this.getMovieDetail()
     },
     methods: {
+      /**
+       * 获取电影详情
+       *
+       * **/
       getMovieDetail(){
         this.$http.get(commonUrl + '/v2/movie/subject/' + this.$route.params.id).then(response => {
           Indicator.close()
@@ -208,31 +213,44 @@
           }
         ;
         }
+        .point_n{
+          margin: {
+            top:.3rem;
+          };
+          color: #9b9b9b;
+          font:{
+            size: .7rem;
+            weight: 300;
+          };
+        }
       }
     }
-    .review{
+    .review {
       background: #f4f7f9;
       display: flex;
       text-align: center;
-      div{
+      div {
         flex: 1;
-        button{
+        button {
           width: 70%;
           height: 2rem;
-          border:1px solid #ffb13e;
+          border: 1px solid #ffb13e;
           background: #f4f7f9;
           color: #ffb13e;
-          border:{
+          border: {
             radius: .3rem;
-          };
-        };
+          }
+        ;
+        }
+      ;
       }
     }
     .desc {
       background: #f4f7f9;
       padding: {
-        top:1rem;
-      };
+        top: 1rem;
+      }
+    ;
       .title {
         color: #9b9b9b;
         font: {
@@ -267,7 +285,8 @@
       background: #f4f7f9;
       padding: {
         bottom: 2rem;
-      };
+      }
+    ;
       .title {
         padding: {
           top: .5rem;
