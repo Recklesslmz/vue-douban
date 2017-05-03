@@ -1,6 +1,8 @@
 # vue-douban
+> 技术栈 Vue2.x + vue-router + vue-resource + mint-ui
 
-> A Vue.js project
+#
+
 
 ## Build Setup
 
