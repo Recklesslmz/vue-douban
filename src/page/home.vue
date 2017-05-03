@@ -45,7 +45,8 @@
             <div v-for='item in movieSoonList' @click="toMovieDetail(item.id)">
               <img :src="item.images.small">
               <div class="title">{{item.title}}</div>
-              <star :averages='item.rating.average' :isShow='isShow' class='star'></star>
+              <star v-if='item.rating.average != 0' :averages='item.rating.average' :isShow='isShow' class='star'></star>
+              <div class="not_show" v-if='item.rating.average == 0'>尚未公映</div>
             </div>
           </div>
         </div>
@@ -118,6 +119,7 @@
         this.$http.get(commonUrl + '/v2/movie/coming_soon?count=8').then(response => {
           Indicator.close()
           this.movieSoonList = response.data.subjects
+          console.log(response)
         }, response => {
 
         })
@@ -192,6 +194,16 @@
           top: .5rem;
         }
       ;
+        .not_show{
+          font:{
+            size: .6rem;
+            weight: 300;
+          };
+          color: #9b9b9b;
+          position: relative;
+          top:.3rem;
+          right: .3rem;
+        }
         .more {
           float: right;
           position: relative;
