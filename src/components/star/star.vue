@@ -29,6 +29,9 @@
       getCurrentStars(){
         console.log(this.average)
         this.starFirst = parseInt(this.averages / 2)
+      },
+      testRef(e){
+        console.log(e)
       }
     },
   }

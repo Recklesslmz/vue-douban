@@ -7,6 +7,12 @@ import home from '../page/home'
 import movieDetail from '../page/movieDetail'
 import rank from '../page/rank'
 
+import movie from '../components/movie/movie'
+import book from '../components/book/book'
+import television from '../components/television/television'
+import city from '../components/city/city'
+import music from '../components/music/music'
+
 Vue.use(Router)
 
 export default new Router({
@@ -23,7 +29,30 @@ export default new Router({
     },
     {
       path: '/home',
-      component: home
+      component: home,
+      children: [
+        {
+          path: '/home/',
+          component: movie
+        },
+        {
+          path: '/home/book',
+          component: book
+        },
+        {
+          path: '/home/television',
+          component: television
+        },
+        {
+          path: '/home/city',
+          component: city
+        },
+        {
+          path: '/home/music',
+          component: music
+        }
+
+      ]
     },
     {
       path: '/movieDetail/:id',

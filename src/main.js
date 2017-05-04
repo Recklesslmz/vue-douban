@@ -7,6 +7,7 @@ import MintUI from 'mint-ui'
 import VueResource from 'vue-resource'
 import 'mint-ui/lib/style.css'
 import store from './store'
+// import 'animate.css'
 // import 'normalize.css'
 
 Vue.use(MintUI)
