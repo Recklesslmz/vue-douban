@@ -59,11 +59,11 @@
               <div class="topOneTitle_f">豆瓣Top250</div>
               <div class="topOneTitle_s">8分以上好电影</div>
             </div>
-            <div class="topTwo" @click="toRank(1)">
+            <div class="topTwo" @click="toRank(3)">
               <div class="topOneTitle_f">本周口碑榜</div>
               <div class="topOneTitle_s">{{currentWeek}}</div>
             </div>
-            <div class="topThree" @click="toRank(2)">
+            <div class="topThree" @click="toRank(3)">
               <div class="topOneTitle_f">新片榜</div>
               <div class="topOneTitle_s">{{currentWeek}}</div>
             </div>
