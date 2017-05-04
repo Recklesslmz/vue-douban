@@ -45,7 +45,8 @@
             <div v-for='item in movieSoonList' @click="toMovieDetail(item.id)">
               <img :src="item.images.small">
               <div class="title">{{item.title}}</div>
-              <star v-if='item.rating.average != 0' :averages='item.rating.average' :isShow='isShow' class='star'></star>
+              <star v-if='item.rating.average != 0' :averages='item.rating.average' :isShow='isShow'
+                    class='star'></star>
               <div class="not_show" v-if='item.rating.average == 0'>尚未公映</div>
             </div>
           </div>
@@ -54,19 +55,19 @@
         <div class="tab-list" v-show='movieSoonList.length > 0'>
           <div class="tab-list-title">精选榜单</div>
           <div class="rankList">
-            <div class="topOne">
+            <div class="topOne" @click="toRank(0)">
               <div class="topOneTitle_f">豆瓣Top250</div>
               <div class="topOneTitle_s">8分以上好电影</div>
             </div>
-            <div class="topTwo">
+            <div class="topTwo" @click="toRank(1)">
               <div class="topOneTitle_f">本周口碑榜</div>
               <div class="topOneTitle_s">{{currentWeek}}</div>
             </div>
-            <div class="topThree">
+            <div class="topThree" @click="toRank(2)">
               <div class="topOneTitle_f">新片榜</div>
               <div class="topOneTitle_s">{{currentWeek}}</div>
             </div>
-            <div class="topFour">
+            <div class="topFour" @click="toRank(3)">
               <div class="topOneTitle_f">票房榜</div>
               <div class="topOneTitle_s">票房最高排名</div>
             </div>
@@ -126,6 +127,9 @@
       },
       toMovieDetail(index){
         this.$router.push({name: 'movieDetail', params: {id: index}})
+      },
+      toRank(index){
+        this.$router.push({name: 'rank', params: {id: index}})
       }
     },
     computed: {
@@ -194,14 +198,15 @@
           top: .5rem;
         }
       ;
-        .not_show{
-          font:{
+        .not_show {
+          font: {
             size: .6rem;
             weight: 300;
-          };
+          }
+        ;
           color: #9b9b9b;
           position: relative;
-          top:.3rem;
+          top: .3rem;
           right: .3rem;
         }
         .more {

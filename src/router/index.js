@@ -31,7 +31,7 @@ export default new Router({
       component: movieDetail
     },
     {
-      path: '/rank',
+      path: '/rank/:id',
       name: 'rank',
       component: rank
     }

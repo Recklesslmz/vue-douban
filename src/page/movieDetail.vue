@@ -94,7 +94,7 @@
         })
       },
       backHome(){
-        this.$router.push({path: '/home'})
+       this.$router.go(-1)
       }
     },
     components: {
