@@ -11,7 +11,6 @@
         </div>
       </div>
     </div>
-
     <div class="tab-list" v-show='movieSoonList.length > 0'>
       <div class="tab-list-title">院线即将上映</div>
       <div class="more">更多></div>

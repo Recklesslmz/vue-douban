@@ -1,10 +1,10 @@
 <template>
   <div id='Login'>
     <div class="title">
-      欢迎来到豆瓣
+      <!--欢迎来到豆瓣-->
     </div>
     <div class="main">
-      <div><input type="text" class="m-passport" placeholde r="账号"></div>
+      <div><input type="text" class="m-passport" placeholder="账号"></div>
       <div><input type="text" class="m-password" placeholder="密码"></div>
     </div>
     <div class="button">
@@ -14,6 +14,20 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import {getHotMovies} from '../store/api'
+  export default {
+    data(){
+      return {}
+    },
+    mounted(){
+      this.getTest()
+    },
+    methods: {
+      getTest(){
+        getHotMovies(5)
+      }
+    }
+  }
 </script>
 <style lang="scss">
   @import "../sass/common";

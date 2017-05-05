@@ -13,6 +13,7 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "mint-ui": "^2.2.5",
     "normalize.css": "^6.0.0",
     "vue": "^2.2.6",

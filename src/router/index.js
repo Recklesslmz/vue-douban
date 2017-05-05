@@ -23,12 +23,13 @@ export default new Router({
 
     },
     {
-      path: '/',
+      path: '/Login',
       component: Login
 
     },
     {
-      path: '/home',
+      path: '/',
+      redirect:'/home',
       component: home,
       children: [
         {

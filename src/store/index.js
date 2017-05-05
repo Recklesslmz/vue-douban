@@ -4,20 +4,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import movie from './modules/movie'
+
 Vue.use(Vuex)
 
-const store = new Vuex.Store({
-  state: {
-    count: 0
-  },
-  mutations: {
-    increment(state){
-      state.count++
-    }
+export default new Vuex.Store({
+  modules: {
+    movie
   }
 
 })
-
-store.commit('increment')
-
-console.log(store.state.count)
