@@ -7,11 +7,13 @@ import MintUI from 'mint-ui'
 import VueResource from 'vue-resource'
 import 'mint-ui/lib/style.css'
 import store from './store'
+// import "../sass/common";
 // import 'animate.css'
 // import 'normalize.css'
 
 Vue.use(MintUI)
 Vue.use(VueResource)
+// Vue.use(underscore)
 
 Vue.config.productionTip = false
 

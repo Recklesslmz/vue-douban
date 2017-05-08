@@ -24,7 +24,9 @@
     },
     methods: {
       getTest(){
-        getHotMovies(5)
+        const arry = {one: 1, two: 2, three: 3}
+       console.log($._.keys(arry))
+        // getHotMovies(5)
       }
     }
   }
