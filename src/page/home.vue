@@ -27,10 +27,14 @@
         </div>
         <router-view></router-view>
       </div>
+      <div class="self" v-show="selected == 'myself'">
+        <self></self>
+      </div>
     </mt-tab-container>
   </div>
 </template>
 <script type="text/ecmascript-6">
+  import self from '../page/self'
   export default {
     data(){
       return {
@@ -67,6 +71,9 @@
         }
       },
     },
+    components: {
+      self
+    }
   }
 </script>
 <style lang="scss">
@@ -249,6 +256,10 @@
         }
 
       }
+    }
+
+    .self {
+      width: 100%;
     }
   }
 

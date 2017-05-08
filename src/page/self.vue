@@ -20,55 +20,55 @@
       <div class="main_menu">
         <div>
           <div class="logo"><img src="../assets/xihuan.png"></div>
-          <div>喜欢</div>
+          <div class="desc">喜欢</div>
         </div>
         <div>
           <div class="logo"><img src="../assets/riji.png"></div>
-          <div>日记</div>
+          <div class="desc">日记</div>
         </div>
         <div>
           <div class="logo"><img src="../assets/xiangce.png"></div>
-          <div> 相册</div>
+          <div class="desc"> 相册</div>
         </div>
         <div>
           <div class="logo"><img src="../assets/guangbo.png"></div>
-          <div> 我的广播</div>
+          <div class="desc"> 我的广播</div>
         </div>
       </div>
       <div class="main_menu">
         <div>
-          <div class="logo"><img src="../assets/xihuan.png"></div>
-          <div>电影.电视</div>
+          <div class="logo"><img src="../assets/dianying.png"></div>
+          <div class="desc">电影.电视</div>
         </div>
         <div>
-          <div class="logo"><img src="../assets/riji.png"></div>
-          <div>读书</div>
+          <div class="logo"><img src="../assets/dushu.png"></div>
+          <div class="desc">读书</div>
         </div>
         <div>
-          <div class="logo"><img src="../assets/xiangce.png"></div>
-          <div> 音乐</div>
+          <div class="logo"><img src="../assets/yinyue.png"></div>
+          <div class="desc"> 音乐</div>
         </div>
         <div>
-          <div class="logo"><img src="../assets/guangbo.png"></div>
-          <div>同城活动</div>
+          <div class="logo"><img src="../assets/tongchenghuodong.png"></div>
+          <div class="desc">同城活动</div>
         </div>
       </div>
       <div class="main_menu">
         <div>
-          <div class="logo"><img src="../assets/xihuan.png"></div>
-          <div>豆瓣时间</div>
+          <div class="logo"><img src="../assets/douban.png"></div>
+          <div class="desc">豆瓣时间</div>
         </div>
         <div>
-          <div class="logo"><img src="../assets/riji.png"></div>
-          <div>豆列</div>
+          <div class="logo"><img src="../assets/doulie.png"></div>
+          <div class="desc">豆列</div>
         </div>
         <div>
-          <div class="logo"><img src="../assets/xiangce.png"></div>
-          <div> 订单</div>
+          <div class="logo"><img src="../assets/dingdan.png"></div>
+          <div class="desc"> 订单</div>
         </div>
         <div>
-          <div class="logo"><img src="../assets/guangbo.png"></div>
-          <div> 钱包</div>
+          <div class="logo"><img src="../assets/qianbao.png"></div>
+          <div class="desc"> 钱包</div>
         </div>
       </div>
     </div>
@@ -113,8 +113,8 @@
           }
         ;
           font: {
-            size: 1.5rem;
-            weight: 500;
+            size: 1.4rem;
+            weight: 300;
           }
         ;
         }
@@ -123,6 +123,10 @@
             top: .5rem;
           }
         ;
+          font:{
+            size: .8rem;
+            weight: 300;
+          };
         }
         .line {
           border: {
@@ -154,11 +158,29 @@
       .main_menu {
         display: flex;
         text-align: center;
+        background: #fff;
+        margin: {
+          top:.1rem;
+        };
+        padding: {
+          top:1rem;
+          bottom: 1rem;
+        };
         .logo {
           img {
-            width: 2rem;
-            height: 2rem;
+            width: 1.6rem;
+            height: 1.6rem;
           }
+        }
+        .desc{
+          margin: {
+            top:.5rem;
+          };
+          color: #5d5d5d;
+          font: {
+            weight: 400;
+            size: .8rem;
+          };
         }
         div {
           flex: 1;
