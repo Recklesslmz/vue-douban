@@ -1,10 +1,6 @@
 <template>
   <div id='home'>
     <mt-tabbar class='tab' v-model="selected">
-      <mt-tab-item id="index">
-        <!--<img slot="icon" src="../assets/100x100.png">-->
-        首页
-      </mt-tab-item>
       <mt-tab-item id="movie">
         <!--<img slot="icon" src="../assets/100x100.png">-->
         书影音
@@ -18,7 +14,7 @@
         我的
       </mt-tab-item>
     </mt-tabbar>
-    <mt-tab-container v-model="selected">
+    <mt-tab-container class='home_main' v-model="selected">
       <div class="tab-main" v-show="selected == 'movie'">
         <div class="tab-menu">
           <div :class="[tabName,{checkStyle:chooseIndex == index}]" @click='chooseItem(index,item.type)'
@@ -87,6 +83,8 @@
   #home {
     background: #f7f7f7;
     .tab {
+      z-index: 99999;
+      position: fixed;
       .is-selected {
         color: $base-color;
       }
@@ -94,6 +92,9 @@
       .mint-tab-item-label {
         line-height: 1.7rem;
       }
+    }
+    .home_main{
+      margin-bottom: 3rem;
     }
     .tab-main {
       width: 100%;

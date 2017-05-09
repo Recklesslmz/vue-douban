@@ -8,7 +8,7 @@
         <span>搜索</span>
       </div>
     </div>
-    <div v-show="false">
+    <div v-show="isShowGroup">
       <div class="main">
         <div class="main_list">
           <div class="movie">电影</div>
@@ -70,11 +70,14 @@
       </div>
     </div>
     <div>
-      <div class="search_list" v-for='item in subjects'>
-        <div>
+      <div class="search_list" @click='toMovieDetail(item.id)' v-for='item in subjects'>
+        <div class="search_img">
           <img :src="item.images.small">
         </div>
-        <div>{{item.title}}</div>
+        <div class="search_desc">
+          <div class="search_name">{{item.title}}</div>
+          <star :averages='item.rating.average' :isShow='isShow' class='star'></star>
+        </div>
       </div>
     </div>
 
@@ -83,30 +86,41 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import star from '../star/star'
+  import {Indicator} from 'mint-ui';
   export default {
     data(){
       return {
+        isShow: true,
+        isShowGroup:true,
         tag: "",
-        count:10,
-        start:0,
-        subjects:[]
+        count: 10,
+        start: 0,
+        subjects: []
       }
     },
     methods: {
       getSearch(){
-        this.$http.get(commonUrl + '/v2/movie/search?q=' + this.tag + '&count=' +this.count).then(response => {
-          console.log(response)
+        Indicator.open()
+        this.$http.get(commonUrl + '/v2/movie/search?q=' + this.tag + '&count=' + this.count).then(response => {
+          Indicator.close()
           this.subjects = response.data.subjects
         }, response => {
         })
       }
+      ,
+      toMovieDetail(id){
+        this.$router.push({name: 'movieDetail', params: {id: id}})
+      }
+    },
+    components: {
+      star
     }
 
   }
 </script>
 <style lang="scss">
   @import "../../sass/common";
-
   #search {
     .nav_search {
       display: flex;
@@ -217,8 +231,57 @@
         }
       }
     }
-    .search_list{
+    .search_list {
       display: flex;
+      width: 94%;
+      margin: {
+        left: 3%;
+        top: .7rem;
+      }
+    ;
+      padding: {
+        bottom: .7rem;
+      }
+    ;
+
+      border: {
+        bottom: 1px solid #dedede;
+      }
+    ;
+      .search_img {
+
+      }
+      .search_desc {
+        margin: {
+          left: 4%;
+          top: .3rem;
+        }
+      ;
+        .search_name {
+          font: {
+            size: 1.1rem;
+          }
+        ;
+        }
+        .star {
+          margin: {
+            top: 1rem;
+          }
+        ;
+          div {
+            img {
+              width: .7rem;
+            }
+          }
+          .rating {
+            color: #9b9b9b;
+            font-size: .8rem;
+            position: relative;
+            left: .1rem;
+            top: .2rem;
+          }
+        }
+      }
     }
   }
 

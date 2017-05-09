@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bf56aa06-8430-4a79-a3f2-d46290e4825d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/search/search.vue" afterPath="$PROJECT_DIR$/src/components/search/search.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/home.vue" afterPath="$PROJECT_DIR$/src/page/home.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -95,22 +97,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/page/home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1178">
-              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="361">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
-                <marker date="1494298328000" expanded="true" signature="1245:1320" ph="..." />
-                <marker date="1494298328000" expanded="true" signature="1338:2298" ph="{...}" />
-                <marker date="1494298328000" expanded="true" signature="1350:1647" ph="{...}" />
-                <marker date="1494298328000" expanded="true" signature="1365:1641" ph="{&quot;selected&quot;: 'movie'...}" />
-                <marker date="1494298328000" expanded="true" signature="1465:1610" ph="[...]" />
-                <marker date="1494298328000" expanded="true" signature="1535:1586" ph="{&quot;name&quot;: '同城'...}" />
-                <marker date="1494298328000" expanded="true" signature="1662:2244" ph="{...}" />
-                <marker date="1494298328000" expanded="true" signature="1693:2237" ph="{...}" />
-                <marker date="1494298328000" expanded="true" signature="1776:2229" ph="{...}" />
-                <marker date="1494298328000" expanded="true" signature="2262:2294" ph="{&quot;self&quot;: self...}" />
+                <marker date="1494315183000" expanded="true" signature="1139:1214" ph="..." />
+                <marker date="1494315183000" expanded="true" signature="1232:2192" ph="{...}" />
+                <marker date="1494315183000" expanded="true" signature="1244:1541" ph="{...}" />
+                <marker date="1494315183000" expanded="true" signature="1259:1535" ph="{&quot;selected&quot;: 'movie'...}" />
+                <marker date="1494315183000" expanded="true" signature="1359:1504" ph="[...]" />
+                <marker date="1494315183000" expanded="true" signature="1429:1480" ph="{&quot;name&quot;: '同城'...}" />
+                <marker date="1494315183000" expanded="true" signature="1556:2138" ph="{...}" />
+                <marker date="1494315183000" expanded="true" signature="1587:2131" ph="{...}" />
+                <marker date="1494315183000" expanded="true" signature="1670:2123" ph="{...}" />
+                <marker date="1494315183000" expanded="true" signature="2156:2188" ph="{&quot;self&quot;: self...}" />
               </folding>
             </state>
           </provider>
@@ -119,8 +121,8 @@
       <file leaf-file-name="movie.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/movie/movie.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="95" column="10" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="95" selection-end-column="10" />
+            <state relative-caret-position="240">
+              <caret line="53" column="67" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="67" />
               <folding>
                 <marker date="1493886749000" expanded="true" signature="1955:2061" ph="..." />
                 <marker date="1493886749000" expanded="true" signature="2079:3966" ph="{...}" />
@@ -152,30 +154,33 @@
       <file leaf-file-name="search.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/search/search.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="199" column="25" lean-forward="true" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="25" />
+            <state relative-caret-position="-342">
+              <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <marker date="1494310914000" expanded="true" signature="2275:2672" ph="{...}" />
-                <marker date="1494310914000" expanded="true" signature="2287:2389" ph="{...}" />
-                <marker date="1494310914000" expanded="true" signature="2302:2383" ph="{&quot;tag&quot;: &quot;&quot;...}" />
-                <marker date="1494310914000" expanded="true" signature="2404:2667" ph="{...}" />
-                <marker date="1494310914000" expanded="true" signature="2423:2661" ph="{...}" />
-                <marker date="1494310914000" expanded="true" signature="2535:2627" ph="{...}" />
-                <marker date="1494310914000" expanded="true" signature="2641:2652" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="2481:2542" ph="..." />
+                <marker date="1494315051000" expanded="true" signature="2560:3174" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="2572:2725" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="2587:2719" ph="{&quot;tag&quot;: &quot;&quot;...}" />
+                <marker date="1494315051000" expanded="true" signature="2740:3133" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="2759:3019" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="2897:2985" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="2999:3010" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="3051:3127" ph="{...}" />
+                <marker date="1494315051000" expanded="true" signature="3151:3169" ph="{&quot;star&quot;: star...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="76">
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -222,6 +227,8 @@
       <find>Hello</find>
       <find>nav_info_name</find>
       <find>main_deac</find>
+      <find>search_name</find>
+      <find>star</find>
     </findStrings>
     <replaceStrings>
       <replace>1px</replace>
@@ -261,11 +268,11 @@
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/page/Login.vue" />
         <option value="$PROJECT_DIR$/src/page/self.vue" />
-        <option value="$PROJECT_DIR$/src/page/home.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/sass/common.scss" />
-        <option value="$PROJECT_DIR$/src/components/search/search.vue" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/components/search/search.vue" />
+        <option value="$PROJECT_DIR$/src/page/home.vue" />
       </list>
     </option>
   </component>
@@ -281,8 +288,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="18" />
-    <option name="y" value="23" />
+    <option name="x" value="123" />
+    <option name="y" value="28" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
   </component>
@@ -438,6 +445,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-douban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-douban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -559,15 +588,15 @@
       <workItem from="1493980530333" duration="2706000" />
       <workItem from="1494209810867" duration="49000" />
       <workItem from="1494222308570" duration="11994000" />
-      <workItem from="1494297719648" duration="6632000" />
+      <workItem from="1494297719648" duration="10050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101084000" />
+    <option name="totallyTimeSpent" value="104502000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="18" y="23" width="1440" height="812" extended-state="0" />
+    <frame x="123" y="28" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17535211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -982,25 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1178">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <marker date="1494298328000" expanded="true" signature="1245:1320" ph="..." />
-            <marker date="1494298328000" expanded="true" signature="1338:2298" ph="{...}" />
-            <marker date="1494298328000" expanded="true" signature="1350:1647" ph="{...}" />
-            <marker date="1494298328000" expanded="true" signature="1365:1641" ph="{&quot;selected&quot;: 'movie'...}" />
-            <marker date="1494298328000" expanded="true" signature="1465:1610" ph="[...]" />
-            <marker date="1494298328000" expanded="true" signature="1535:1586" ph="{&quot;name&quot;: '同城'...}" />
-            <marker date="1494298328000" expanded="true" signature="1662:2244" ph="{...}" />
-            <marker date="1494298328000" expanded="true" signature="1693:2237" ph="{...}" />
-            <marker date="1494298328000" expanded="true" signature="1776:2229" ph="{...}" />
-            <marker date="1494298328000" expanded="true" signature="2262:2294" ph="{&quot;self&quot;: self...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1009,10 +1019,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/movie/movie.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="95" column="10" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="95" selection-end-column="10" />
+        <state relative-caret-position="240">
+          <caret line="53" column="67" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="67" />
           <folding>
             <marker date="1493886749000" expanded="true" signature="1955:2061" ph="..." />
             <marker date="1493886749000" expanded="true" signature="2079:3966" ph="{...}" />
@@ -1042,29 +1060,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/search/search.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="199" column="25" lean-forward="true" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="25" />
+        <state relative-caret-position="-342">
+          <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1494310914000" expanded="true" signature="2275:2672" ph="{...}" />
-            <marker date="1494310914000" expanded="true" signature="2287:2389" ph="{...}" />
-            <marker date="1494310914000" expanded="true" signature="2302:2383" ph="{&quot;tag&quot;: &quot;&quot;...}" />
-            <marker date="1494310914000" expanded="true" signature="2404:2667" ph="{...}" />
-            <marker date="1494310914000" expanded="true" signature="2423:2661" ph="{...}" />
-            <marker date="1494310914000" expanded="true" signature="2535:2627" ph="{...}" />
-            <marker date="1494310914000" expanded="true" signature="2641:2652" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="2481:2542" ph="..." />
+            <marker date="1494315051000" expanded="true" signature="2560:3174" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="2572:2725" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="2587:2719" ph="{&quot;tag&quot;: &quot;&quot;...}" />
+            <marker date="1494315051000" expanded="true" signature="2740:3133" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="2759:3019" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="2897:2985" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="2999:3010" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="3051:3127" ph="{...}" />
+            <marker date="1494315051000" expanded="true" signature="3151:3169" ph="{&quot;star&quot;: star...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/page/home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="361">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <marker date="1494315183000" expanded="true" signature="1139:1214" ph="..." />
+            <marker date="1494315183000" expanded="true" signature="1232:2192" ph="{...}" />
+            <marker date="1494315183000" expanded="true" signature="1244:1541" ph="{...}" />
+            <marker date="1494315183000" expanded="true" signature="1259:1535" ph="{&quot;selected&quot;: 'movie'...}" />
+            <marker date="1494315183000" expanded="true" signature="1359:1504" ph="[...]" />
+            <marker date="1494315183000" expanded="true" signature="1429:1480" ph="{&quot;name&quot;: '同城'...}" />
+            <marker date="1494315183000" expanded="true" signature="1556:2138" ph="{...}" />
+            <marker date="1494315183000" expanded="true" signature="1587:2131" ph="{...}" />
+            <marker date="1494315183000" expanded="true" signature="1670:2123" ph="{...}" />
+            <marker date="1494315183000" expanded="true" signature="2156:2188" ph="{&quot;self&quot;: self...}" />
+          </folding>
         </state>
       </provider>
     </entry>
