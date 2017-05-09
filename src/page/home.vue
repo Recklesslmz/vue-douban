@@ -9,9 +9,9 @@
         <!--<img slot="icon" src="../assets/100x100.png">-->
         书影音
       </mt-tab-item>
-      <mt-tab-item id="broadcast">
+      <mt-tab-item id="search">
         <!--<img slot="icon" src="../assets/100x100.png">-->
-        广播
+        搜索
       </mt-tab-item>
       <mt-tab-item id="myself">
         <!--<img slot="icon" src="../assets/100x100.png">-->
@@ -30,11 +30,15 @@
       <div class="self" v-show="selected == 'myself'">
         <self></self>
       </div>
+      <div class="search" v-show="selected == 'search'">
+        <search></search>
+      </div>
     </mt-tab-container>
   </div>
 </template>
 <script type="text/ecmascript-6">
   import self from '../page/self'
+  import search from '../components/search/search'
   export default {
     data(){
       return {
@@ -72,7 +76,8 @@
       },
     },
     components: {
-      self
+      self,
+      search
     }
   }
 </script>
@@ -260,6 +265,10 @@
 
     .self {
       width: 100%;
+    }
+    .search{
+      width: 100%;
+      background: #fff;
     }
   }
 

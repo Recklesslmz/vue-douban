@@ -13,6 +13,7 @@ import book from '../components/book/book'
 import television from '../components/television/television'
 import city from '../components/city/city'
 import music from '../components/music/music'
+import search from '../components/search/search'
 
 Vue.use(Router)
 
@@ -75,6 +76,10 @@ export default new Router({
       path: '/self',
       name: 'self',
       component: self
+    },
+    {
+      path: '/search',
+      component: search
     }
   ]
 })
