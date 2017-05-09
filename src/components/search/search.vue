@@ -10,7 +10,7 @@
     </div>
     <div v-show="isShowGroup">
       <div class="main">
-        <div class="main_list">
+        <div class="main_list" @click='toDetail(0)'>
           <div class="movie">电影</div>
           <div class="main_desc">影院热播</div>
         </div>
@@ -92,7 +92,7 @@
     data(){
       return {
         isShow: true,
-        isShowGroup:true,
+        isShowGroup: true,
         tag: "",
         count: 10,
         start: 0,
@@ -111,6 +111,13 @@
       ,
       toMovieDetail(id){
         this.$router.push({name: 'movieDetail', params: {id: id}})
+      },
+      toDetail(index){
+        switch (index) {
+          case 0:
+            this.$router.push({path: '/'})
+            break
+        }
       }
     },
     components: {
@@ -121,6 +128,7 @@
 </script>
 <style lang="scss">
   @import "../../sass/common";
+
   #search {
     .nav_search {
       display: flex;

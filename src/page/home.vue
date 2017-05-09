@@ -93,7 +93,7 @@
         line-height: 1.7rem;
       }
     }
-    .home_main{
+    .home_main {
       margin-bottom: 3rem;
     }
     .tab-main {
@@ -267,7 +267,7 @@
     .self {
       width: 100%;
     }
-    .search{
+    .search {
       width: 100%;
       background: #fff;
     }
