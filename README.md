@@ -11,10 +11,6 @@
 - **电影详情** ：https://api.douban.com/v2/movie/subject/:id
 - **TOP250** ：https://api.douban.com/v2/movie/top250
 
-# 后续
-
-> 项目比较的粗糙都是一些基础的应用~
-  附上项目地址https://github.com/Recklesslmz/vue-douban
 
 #
 
@@ -22,26 +18,14 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install dependencies 下载依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8080 启动项目端口为8080
 npm run dev
 
-# build for production with minification
+# build for production with minification 打包上传
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 # License
 > MIT
