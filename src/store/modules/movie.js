@@ -3,33 +3,40 @@
  */
 import * as type from '../douban-type'
 import * as api from '../api'
+import axios from 'axios'
 
 const state = {
-  movie: ''
+  hotMovies: []
 }
+
 const mutations = {
-  [type.MOVIE_HOT](state, payload){
-    state.movies[payload.type].subjects =
-      state.movies[payload.type].subjects.concat(payload.subjects)
-    // state.movies[payload.type].total = state.movies[payload.type].subjects.length;
+  getMovie(state, payload){
+    switch (payload.tag) {
+      case 'hotMovies':
+        state.hotMovies = payload.res
+        break
+      default:
+        state.hotMovies = payload.res
+    }
   }
 }
 const actions = {
-  [type.MOVIE_HOT](state, payload){
-    api.getHotMovies(payload.type, {count: payload.count})
-      .then(data => context.commit(type.MOVIE_HOT, {
-        type: payload.type,
-        subjects: data.subjects
-      }));
+  getMovie({commit}){
+    axios.get(commonUrl + '/v2/movie/in_theaters?count=8')
+      .then(function (response) {
+        console.log(response)
+        commit({
+          type: 'getMovie',
+          tag: 'hotMovies',
+          res: response.data.subjects
+        })
+      })
+      .catch(function (error) {
+      });
   }
 }
 export default {
-  state: {
-    movies: {
-      subjects: []
-
-    }
-  },
+  state,
   mutations,
   actions
 }

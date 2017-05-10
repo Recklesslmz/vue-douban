@@ -6,7 +6,7 @@ import router from './router'
 import MintUI from 'mint-ui'
 import VueResource from 'vue-resource'
 import 'mint-ui/lib/style.css'
-import store from './store'
+import store from './store/index'
 // import "../sass/common";
 // import 'animate.css'
 // import 'normalize.css'

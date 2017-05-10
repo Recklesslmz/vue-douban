@@ -10,25 +10,36 @@
     <div class="button">
       <button class="fadeInLeft">登录</button>
     </div>
+    <div>
+      {{hotMovies}}
+    </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import {getHotMovies} from '../store/api'
+ import {mapState} from 'vuex'
   export default {
     data(){
       return {}
     },
     mounted(){
-      this.getTest()
+
+    },
+    computed:{
+      ...mapState({
+        hotMovies: state => state.movie.hotMovies
+      })
     },
     methods: {
-      getTest(){
-        const arry = {one: 1, two: 2, three: 3}
-       console.log($._.keys(arry))
-        // getHotMovies(5)
+      getMovie(){
+        this.$store.dispatch('getMovie')
       }
+
+    },
+    created(){
+      this.getMovie()
     }
+
   }
 </script>
 <style lang="scss">

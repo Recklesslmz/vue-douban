@@ -7,6 +7,7 @@ import movieDetail from '../page/movieDetail'
 import rank from '../page/rank'
 import musical from '../page/music'
 import self from '../page/self'
+import buy from '../page/buy'
 
 import movie from '../components/movie/movie'
 import book from '../components/book/book'
@@ -80,6 +81,10 @@ export default new Router({
     {
       path: '/search',
       component: search
+    },
+    {
+      path: '/buy',
+      component: buy
     }
   ]
 })
