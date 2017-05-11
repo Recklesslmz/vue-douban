@@ -1,7 +1,7 @@
 <template>
   <div id='Login'>
     <div class="title">
-      <!--欢迎来到豆瓣-->
+      欢迎来到豆瓣
     </div>
     <div class="main">
       <div><input type="text" class="m-passport" placeholder="账号"></div>
