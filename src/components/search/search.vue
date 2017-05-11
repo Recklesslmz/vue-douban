@@ -8,7 +8,7 @@
         <span>搜索</span>
       </div>
     </div>
-    <div v-show="isShowGroup">
+    <div v-show="tag == ''">
       <div class="main">
         <div class="main_list" @click='toDetail(0)'>
           <div class="movie">电影</div>
@@ -92,7 +92,6 @@
     data(){
       return {
         isShow: true,
-        isShowGroup: true,
         tag: "",
         count: 10,
         start: 0,

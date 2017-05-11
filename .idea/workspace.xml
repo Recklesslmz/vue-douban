@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf56aa06-8430-4a79-a3f2-d46290e4825d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/search/search.vue" afterPath="$PROJECT_DIR$/src/components/search/search.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -93,6 +93,29 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#140#161#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/search/search.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+              <folding>
+                <marker date="1494496452000" expanded="false" signature="2500:2561" ph="..." />
+                <marker date="1494496452000" expanded="true" signature="2579:3313" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="2591:2718" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="2606:2712" ph="{&quot;tag&quot;: &quot;&quot;...}" />
+                <marker date="1494496452000" expanded="true" signature="2733:3272" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="2752:3012" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="2890:2978" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="2992:3003" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="3044:3120" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="3143:3266" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="3168:3258" ph="{...}" />
+                <marker date="1494496452000" expanded="true" signature="3290:3308" ph="{&quot;star&quot;: star...}" />
               </folding>
             </state>
           </provider>
@@ -116,16 +139,6 @@
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getters.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/getters.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -209,7 +222,6 @@
         <option value="$PROJECT_DIR$/src/sass/common.scss" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/page/home.vue" />
-        <option value="$PROJECT_DIR$/src/components/search/search.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/page/buy.vue" />
         <option value="$PROJECT_DIR$/src/store/modules/products.js" />
@@ -226,6 +238,7 @@
         <option value="$PROJECT_DIR$/src/store/action.js" />
         <option value="$PROJECT_DIR$/src/page/Login.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/search/search.vue" />
       </list>
     </option>
   </component>
@@ -322,6 +335,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-douban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue-douban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,12 +520,12 @@
       <workItem from="1494467425009" duration="467000" />
       <workItem from="1494472524818" duration="2484000" />
       <workItem from="1494492814026" duration="771000" />
-      <workItem from="1494494968998" duration="1100000" />
+      <workItem from="1494494968998" duration="1559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138456000" />
+    <option name="totallyTimeSpent" value="138915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -748,13 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search/search.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/buy.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -934,6 +962,27 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#140#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search/search.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+          <folding>
+            <marker date="1494496452000" expanded="false" signature="2500:2561" ph="..." />
+            <marker date="1494496452000" expanded="true" signature="2579:3313" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="2591:2718" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="2606:2712" ph="{&quot;tag&quot;: &quot;&quot;...}" />
+            <marker date="1494496452000" expanded="true" signature="2733:3272" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="2752:3012" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="2890:2978" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="2992:3003" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="3044:3120" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="3143:3266" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="3168:3258" ph="{...}" />
+            <marker date="1494496452000" expanded="true" signature="3290:3308" ph="{&quot;star&quot;: star...}" />
           </folding>
         </state>
       </provider>
