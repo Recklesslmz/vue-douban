@@ -11,7 +11,6 @@
       <button class="fadeInLeft">登录</button>
     </div>
     <div>
-      {{hotMovies}}
     </div>
   </div>
 </template>
@@ -32,7 +31,7 @@
     },
     methods: {
       getMovie(){
-        this.$store.dispatch('getMovie')
+        this.$store.dispatch('GET_TOP250_MOVIE')
       }
 
     },

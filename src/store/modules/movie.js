@@ -1,8 +1,7 @@
 /**
  * Created by limuzi on 2017/4/28.
  */
-import * as type from '../douban-type'
-import * as api from '../api'
+import {GET_TOP250_MOVIE} from '../douban-type'
 import axios from 'axios'
 
 const state = {
@@ -10,29 +9,17 @@ const state = {
 }
 
 const mutations = {
-  getMovie(state, payload){
-    switch (payload.tag) {
-      case 'hotMovies':
-        state.hotMovies = payload.res
-        break
-      default:
-        state.hotMovies = payload.res
-    }
+  [GET_TOP250_MOVIE](state, movies){
+    state.hotMovies = movies
   }
 }
 const actions = {
-  getMovie({commit}){
+  [GET_TOP250_MOVIE]({commit}){
     axios.get(commonUrl + '/v2/movie/in_theaters?count=8')
-      .then(function (response) {
-        console.log(response)
-        commit({
-          type: 'getMovie',
-          tag: 'hotMovies',
-          res: response.data.subjects
-        })
+      .then((response)=> {
+        commit('GET_TOP250_MOVIE', response.data.subjects
+        )
       })
-      .catch(function (error) {
-      });
   }
 }
 export default {
