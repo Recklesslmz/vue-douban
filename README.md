@@ -3,7 +3,7 @@
  > 一直想做一个系统性的项目，后来看到豆瓣有个开源的api，所以我就模仿豆瓣的电影显示界面做了几个界面， 目前还在持续的开发中，本人是个小白~请各位大大指教呀
 
 # 用到的技术栈
- > vue + vue-resource(后续换成axios) + vue-cli + vue-router + mint-ui + sass
+ > vue + axios + vue-cli + vue-router + mint-ui + sass
 
 # 用到的接口
  > 用到的是豆瓣的开源接口
