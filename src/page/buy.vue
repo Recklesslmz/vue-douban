@@ -6,7 +6,7 @@
     <cart></cart>
 
     <div class="title">
-      总计：5555555
+      总计：5555555777
     </div>
 
   </div>
