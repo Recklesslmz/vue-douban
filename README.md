@@ -33,6 +33,9 @@ npm run build
 # 预览地址
 
 <http://recklesslmz.com/vue-douban/dist/#/home>
+> 好吧，我还是没解决接口的跨域的问题，还是把项目down下来看吧~
+
+如果你觉得你这个项目对你有帮助的话，请不要吝啬你的小手点个star吧~
 
 # License
 
