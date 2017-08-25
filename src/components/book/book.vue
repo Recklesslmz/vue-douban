@@ -78,7 +78,6 @@
     methods: {
       chooseItem(index, type){
         this.chooseIndex = index
-        console.log(type)
         switch (type) {
           case 1:
             this.$router.push({path: '/home'})
@@ -99,7 +98,6 @@
         this.$http.get(commonUrl + '/v2/movie/coming_soon?count=8').then(response => {
           Indicator.close()
           this.movieSoonList = response.data.subjects
-          console.log(response)
         }, response => {
 
         })
@@ -118,7 +116,6 @@
         let myDate = new Date()
         myDate.setDate(myDate.getDate() - 7);
         let beforeDay = myDate.getMonth() + 1 + '月' + myDate.getDate() + '日'
-
         return beforeDay + '~' + currentDay
       }
     },

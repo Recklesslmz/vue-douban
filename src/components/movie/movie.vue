@@ -78,7 +78,6 @@
     methods: {
       chooseItem(index, type){
         this.chooseIndex = index
-        console.log(type)
         switch (type) {
           case 1:
             this.$router.push({path: '/home'})

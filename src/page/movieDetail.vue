@@ -45,8 +45,8 @@
       <div class="title">影人</div>
       <div class="worker">
         <div v-for="item in movie.directors">
-          <img :src="item.avatars.small">
-          <div class="name">{{item.name}}</div>
+          <img :src="item.avatars.small" v-if="item.avatars.small">
+          <div class="name" v-if="item.name">{{item.name}}</div>
         </div>
         <div v-for='item in movie.casts'>
           <img :src="item.avatars.small">
@@ -88,13 +88,12 @@
           this.large = response.data.images.large
           this.average = response.data.rating.average
           this.filmName = response.data.title
-          console.log(response)
         }, response => {
 
         })
       },
       backHome(){
-       this.$router.go(-1)
+        this.$router.go(-1)
       }
     },
     components: {
@@ -116,18 +115,15 @@
       margin: {
         top: -.1rem;
       }
-    ;
       padding: {
         top: 3rem;
       }
-    ;
       .nav-img {
         width: 60%;
         padding: {
           top: .5rem;
           bottom: 1rem;
         }
-      ;
       }
 
     }
@@ -137,7 +133,6 @@
       padding: {
         bottom: 2rem;
       }
-    ;
       .main-name {
         .name {
           font: {
@@ -147,19 +142,16 @@
             top: 1.5rem;
             left: 1rem;
           }
-        ;
         }
         .type {
           margin: {
             top: .6rem;
             left: 1rem;
           }
-        ;
           color: #9b9b9b;
           font: {
             size: .7rem;
           }
-        ;
         }
       }
       .point {
@@ -172,19 +164,16 @@
           top: -3rem;
           right: 1rem;
         }
-      ;
         box-shadow: 1px 1px 6px #dcdcdc;
         .point_title {
           font: {
             size: .7rem;
             weight: 300;
           }
-        ;
           color: #9b9b9b;
           margin: {
             top: .5rem;
           }
-        ;
         }
         .point_star {
           position: relative;
@@ -195,11 +184,9 @@
           margin: {
             top: .2rem;
           }
-        ;
           font: {
             size: 1.5rem;
           }
-        ;
         }
         .point_count {
           color: #9b9b9b;
@@ -207,21 +194,19 @@
             size: .7rem;
             weight: 300;
           }
-        ;
           margin: {
             top: .2rem;
           }
-        ;
         }
-        .point_n{
+        .point_n {
           margin: {
-            top:.3rem;
-          };
+            top: .3rem;
+          }
           color: #9b9b9b;
-          font:{
+          font: {
             size: .7rem;
             weight: 300;
-          };
+          }
         }
       }
     }
@@ -240,9 +225,7 @@
           border: {
             radius: .3rem;
           }
-        ;
         }
-      ;
       }
     }
     .desc {
@@ -250,18 +233,15 @@
       padding: {
         top: 1rem;
       }
-    ;
       .title {
         color: #9b9b9b;
         font: {
           size: .8rem;
           weight: 300;
         }
-      ;
         margin: {
           left: 2%;
         }
-      ;
       }
       .content {
         width: 96%;
@@ -269,16 +249,13 @@
         margin: {
           left: 2%;
         }
-      ;
         margin: {
           top: .5rem;
         }
-      ;
         font: {
           size: .9rem;
           weight: 300;
         }
-      ;
       }
     }
     .director {
@@ -286,22 +263,18 @@
       padding: {
         bottom: 2rem;
       }
-    ;
       .title {
         padding: {
           top: .5rem;
         }
-      ;
         color: #9b9b9b;
         font: {
           size: .8rem;
           weight: 300;
         }
-      ;
         margin: {
           left: 2%;
         }
-      ;
       }
       .worker {
         width: 96%;
@@ -309,7 +282,6 @@
           left: 2%;
           top: .5rem;
         }
-      ;
         overflow-x: scroll;
         text-align: center;
         display: flex;
@@ -322,7 +294,6 @@
             weight: 300;
             size: .8rem;
           }
-        ;
         }
       }
       .worker::-webkit-scrollbar {

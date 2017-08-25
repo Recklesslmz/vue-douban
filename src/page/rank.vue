@@ -47,7 +47,7 @@
         isShow: true,
         isChoose: '',
         isChooseShow: true,
-        currentChoose:0,
+        currentChoose: 0,
         filmName: 'TOP250',
         topList: [],
 
@@ -62,7 +62,7 @@
       switch (this.$route.params.id) {
         case 0:
           this.getTop()
-          this.filmName='TOP250'
+          this.filmName = 'TOP250'
           break
         case 1:
           this.getWeekly()
@@ -72,7 +72,7 @@
           break
         case 3:
           this.getInTheaters()
-          this.filmName='票房榜'
+          this.filmName = '票房榜'
           break
       }
 

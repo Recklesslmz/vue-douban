@@ -86,7 +86,6 @@
     .nav {
       display: flex;
       height: 9rem;
-      /*background: #8094e4;*/
       background: -webkit-linear-gradient(-40deg, #8094e4 170px, #798ee1 80px);
       .nav_header {
         flex: 1;
@@ -99,7 +98,7 @@
             border: {
               radius: 50%;
             }
-          ;
+
             border: 2px solid #fff;
           }
         }
@@ -111,42 +110,35 @@
           margin: {
             top: 2.2rem;
           }
-        ;
           font: {
             size: 1.4rem;
             weight: 300;
           }
-        ;
         }
         .nav_info_id {
           margin: {
             top: .5rem;
           }
-        ;
-          font:{
+          font: {
             size: .8rem;
             weight: 300;
-          };
+          }
         }
         .line {
           border: {
             top: 1px solid rgba(250, 250, 250, .2);
           }
-        ;
           margin: {
             top: .5rem;
           }
-        ;
         }
         .nav_info_focus {
           font: {
             weight: 400;
           }
-        ;
           margin: {
             top: 1rem;
           }
-        ;
           .focus_d {
             position: relative;
             left: 2rem;
@@ -160,27 +152,27 @@
         text-align: center;
         background: #fff;
         margin: {
-          top:.1rem;
-        };
+          top: .1rem;
+        }
         padding: {
-          top:1rem;
+          top: 1rem;
           bottom: 1rem;
-        };
+        }
         .logo {
           img {
             width: 1.6rem;
             height: 1.6rem;
           }
         }
-        .desc{
+        .desc {
           margin: {
-            top:.5rem;
-          };
+            top: .5rem;
+          }
           color: #5d5d5d;
           font: {
             weight: 400;
             size: .8rem;
-          };
+          }
         }
         div {
           flex: 1;

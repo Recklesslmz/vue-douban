@@ -2,15 +2,12 @@
   <div id='home'>
     <mt-tabbar class='tab' v-model="selected">
       <mt-tab-item id="movie">
-        <!--<img slot="icon" src="../assets/100x100.png">-->
         书影音
       </mt-tab-item>
       <mt-tab-item id="search">
-        <!--<img slot="icon" src="../assets/100x100.png">-->
         搜索
       </mt-tab-item>
       <mt-tab-item id="myself">
-        <!--<img slot="icon" src="../assets/100x100.png">-->
         我的
       </mt-tab-item>
     </mt-tabbar>
@@ -51,7 +48,6 @@
     methods: {
       chooseItem(index, type){
         this.chooseIndex = index
-        console.log(type)
         switch (type) {
           case 1:
             this.$router.push({path: '/home'})
